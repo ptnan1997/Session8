@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: black;
+    color:white;
+    line-height: 40px;
+    padding:20px;
+    display:flex; 
+    flex-wrap: wrap;
+}
+
+@media screen  and ( max-width:1024px ) {
+    .infor{
+        width:50%;
+    }
+}
+@media screen and ( max-width:480px ) {
+    .footer{
+        display:flex;
+        flex-direction:column;
+    }
+}
