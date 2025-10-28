@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    background-color:#add8e6 ;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.child{
+    border:1px solid #c9cdce;
+    line-height:40px;
+}
+.child1{
+    width:50%;
+    text-align: center;
+}
+.child2{
+    width:50%;
+    text-align: center;
+}
+.child3{
+    width:100%;
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    .child1{
+    width:100%;
+    text-align: center;
+}
+.child2{
+    width:100%;
+    text-align: center;
+}
+.child3{
+    width:100%;
+    text-align: center;
+}
+}
