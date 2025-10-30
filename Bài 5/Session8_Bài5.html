@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session8_Bài5</title>
+  <link rel="stylesheet" href="./Session8_Bài5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+<body>
+  <header>
+    <div class="tripguide"><img src="./resource/logo.png" alt="hinhanh"></div>
+    <div>
+      <nav class="navbar">
+        <div class="left-group">
+            <div class="currency">
+                <span>USD</span>
+                <img src="https://flagcdn.com/w40/us.png" alt="US Flag" class="flag">
+            </div>
+            <div class="bell">
+                <i class="far fa-bell"></i>
+            </div>
+        </div>
+
+        <div class="right-group">
+            <div class="avatar">
+                <img src="https://lh3.googleusercontent.com/ogw/AF2bZyhwv4kYESLzCtbe3A616jd-PuZcUkrxv_HMRREWrD0ltFg=s32-c-mo" alt="User">
+            </div>
+            <span class="username">RyanPhan</span>
+            <i class="fas fa-chevron-down dropdown"></i>
+        </div>
+    </nav>
+    </div>
+    <div class="navbar-main">
+      <span>Home</span>
+      <span><i class="fa-solid fa-chevron-right"></i></span>
+      <span>Hotel list</span>
+      <span><i class="fa-solid fa-chevron-right"></i></span>
+      <span>Hotel details</span>
+      <span><i class="fa-solid fa-chevron-right"></i></span>
+      <span style="opacity: 50%;">Comfirm and pay</span>
+    </div>
+  </header>
+  <main>
+    <!-- Section 1 -->
+    <section class="Section1">
+      <h1>Confirm your Book</h1>
+      <h3>Your tour</h3>
+      <div class="Date">
+        <div>Date</div>
+        <div style="opacity: 50%;">June 27, 30-2020</div>
+        <div class="pencil"><i class="fa-solid fa-pencil"></i></div>
+      </div>
+      <div class="Traveller">
+        <div>Traveller</div>
+        <div style="opacity: 50%;">1 Passenger</div>
+        <div class="pencil"><i class="fa-solid fa-pencil"></i></div>
+      </div>
+    </section>
+    <!-- Section2 -->
+    <section class="Section2">
+      <div class="book-details">
+        <h4>Switzerland Hotels and Places to Stay</h4>
+        <p><i class="fa-solid fa-star" style="color: #FFD43B;"></i><b>4.8</b><span style="opacity: 50%;">(122 reviews)</span></p>
+      </div>
+    </section>
+    <!-- Section 3 -->
+    <section class="Section3">
+      <img src="./resource/mayment card.png" alt="">
+      
+    </section>
+    <!-- Section 4 -->
+    <section class="Section4">
+      <img style="width:350px;" src="./resource/card 1.png" alt="">
+      <img style="width:350px;" src="./resource/card 2.png" alt="">
+    </section>
+    <!-- Section5 -->
+    <div class="Section5">
+      
+  <div class="card-input-group">
+    <label>Card Number</label>
+    <input style="width:400px;" type="text" placeholder="5884 6241 4444 3333" maxlength="19" class="card-number">
+  </div>
+
+  <div class="card-expiry-cvc">
+    <div class="expiry-group">
+      <label>Expiry Date</label>
+      <div class="expiry-inputs">
+        <input type="text" placeholder="MM" maxlength="2" class="expiry-mm">
+        <span>/</span>
+        <input type="text" placeholder="YY" maxlength="2" class="expiry-yy">
+      </div>
+    </div>
+    <div class="cvc-group">
+      <label>CVC/CVV</label>
+      <input type="text" placeholder="•••" maxlength="4" class="cvc">
+    </div>
+  </div>
+
+  <label class="save-card-checkbox">
+    <input type="checkbox" checked>
+    <span>Save Card</span>
+  </label>
+
+  <button style="width:100%;" class="confirm-btn">Confirm and reserve</button>
+</div>
+    </div>
+    <section class="Section6">
+      <img style="width:100%;" src="./resource/bg.png" alt="">
+      <div class="text-in-img">
+        <article class="left-side">
+          <h2 style="margin-bottom: 20px;">Get our pro offers</h2>
+          <p>Create a visuak identity for your company, and an overall brand</p>
+        </article>
+        <article class="right-side">
+          <div class="email-type">
+            <input style="border:none;width:80%;" type="email" placeholder="Type your email here" name="email"  id="name">
+            <Button style="padding:14px;background-color:#353945;color:white; border-radius: 5px;">Subscribe</Button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer style="background-color:#f4f5f6;" class="footer" >
+    <div class="footer-part">
+      <img src="./resource/logo.png" alt="">
+      <p>This is the team that specializes in making sure in the find it a your interior looks cool</p>
+    </div>
+    <div class="footer-part">
+      <h4>Services</h4>
+      <p>Travel Booking</p>
+      <p>Fight Booking</p>
+      <p>Car Booking</p>
+      <p>FiveStar Hotel</p>
+      <p>Traveling</p>
+    </div>
+    <div class="footer-part">
+      <h4>Support</h4>
+      <p>Account</p>
+      <p>Legal</p>
+      <p>Contact</p>
+      <p>Terms & Condition</p>
+      <p>Privacy Policy</p>
+    </div>
+    <div class="footer-part">
+      <h4>Business</h4>
+      <p>Success</p>
+      <p>About Locato</p>
+      <p>Blog</p>
+      <p>Information</p>
+      <p>Travel Guide</p>
+    </div>
+  </footer>
+</body>
+</html>

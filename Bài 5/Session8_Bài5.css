@@ -1,0 +1,394 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+}
+
+.tripguide {
+  padding: 20px 30px;
+}
+main{
+  width:100%;
+  background-color: #fafafb;
+  padding:0 150px;
+  display:grid;
+  /* grid-template-columns: 1fr  1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-areas:
+  "Section1 Section2"
+  "Section3 Section2" 
+  "Section4 Section2"
+  "Section5 Section2"
+  "Section6 Section6";
+}
+
+/* Thanh nav - sẵn sàng cho position: absolute */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 14px 10px;
+  width: 150px;
+
+
+
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+}
+
+/* Nếu bạn muốn dùng position: absolute sau này, chỉ cần thêm: */
+/*
+        .navbar {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        */
+.navbar-main {
+  background-color: #fafafb;
+  padding: 40px 150px;
+}
+
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 20px;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.bell {
+  position: relative;
+  font-size: 19px;
+  color: #666;
+  cursor: pointer;
+}
+
+.bell::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 8px;
+  height: 8px;
+  background-color: #ff3b30;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+}
+
+.right-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.username {
+  font-weight: 600;
+  color: #1c1c1e;
+  font-size: 15px;
+}
+
+.dropdown {
+  color: #888;
+  font-size: 13px;
+}
+/* Hiệu chỉnh các phần tử trong Section 1 */
+.Section1 h1{
+  font-size: 40px;
+  padding:20px 0px;
+  
+
+  width:100%;
+  border-bottom: 1px solid rgb(203, 201, 201);
+}
+.Section1{
+  grid-area:Section1;
+  width:100%;
+  padding:25px;
+}
+h3{
+  padding:20px 0px;
+  font-size: 25px;
+  width:100%;
+}
+.Date{
+  width:50%;
+  background-color: #f4f4f6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  padding:10px
+}
+.Traveller{
+  width:50%;
+  background-color: #f4f4f6;
+  border-radius: 10px;
+  position: relative;
+  padding:10px;
+}
+.pencil{
+  position: absolute;
+  top:20px;
+  right:10px;
+}
+/* Section 2 */
+.Section2{
+  grid-area:Section2;
+  width:100%;
+  padding:20px;
+}
+.book-details{
+  font-size: 22px;
+  line-height: 30px;
+  padding:15px;
+  border: 2px solid #ebeff5;
+  border-radius: 20px;
+  background-color:#ffffff;
+  width:400px;
+  height:750px ;
+}
+
+.Section3{
+  padding:10px;
+  grid-area:Section3;
+  width:50%;
+  
+}
+.Section4{
+  padding:10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:5px;
+  grid-area:Section4;
+}
+#div-4 {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  max-width: 380px;
+}
+.Section5{
+  width:50%;
+  grid-area:Section5;
+  padding:20px;
+}
+.Section6{
+  position:relative;
+  grid-area:Section6;
+  width:100%;
+}
+.card-input-group, .expiry-group, .cvc-group {
+  margin-bottom: 16px;
+}
+
+.card-input-group label,
+.expiry-group label,
+.cvc-group label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.card-number {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.card-expiry-cvc {
+  display: flex;
+  gap: 12px;
+}
+
+.expiry-inputs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.expiry-mm, .expiry-yy, .cvc {
+  width: 60px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cvc {
+  width: 80px;
+}
+
+.save-card-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.save-card-checkbox input[type="checkbox"] {
+  accent-color: #007bff;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.confirm-btn:hover {
+  background: #0056b3;
+}
+.text-in-img{
+  width:100%;
+  position:absolute;
+  top:60px;
+  display:flex;
+  gap: 50px;
+  height:auto;
+  padding:0px 30px;
+}
+.left-side{
+  width:50%;
+  font-size: 18px;
+  color:white;
+}
+.right-side{
+  width:50%;
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.email-type{
+  display:flex;
+  justify-content: space-between;
+  background-color:#fcfcfd;
+  border-radius: 5px;
+}
+.footer{
+  display:flex;
+  justify-content:space-around;
+  gap: 20px;
+}
+.footer-part :nth-child(1){
+  width:25%;
+}
+.footer-part :nth-child(2){
+  width:25%;
+}
+.footer-part :nth-child(3){
+  width:25%;
+}
+.footer-part :nth-child(4){
+  width:25%;
+}
+@media (max-width:480px) {
+  main{
+  
+  background-color: #fafafb;
+  padding:0 0px;
+  display:grid;
+  /* grid-template-columns: 1fr  1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-areas:
+  "Section1 "
+  "Section2 "
+  "Section3 " 
+  "Section4 "
+  "Section5 "
+  "Section6 ";
+}
+.Section4 img{
+  flex-direction: column;
+  gap:1px;
+  padding:0px 50px;
+}
+.text-in-img{
+  width:100%;
+  position:absolute;
+  top:0px;
+  display:flex;
+  flex-wrap: wrap;
+  gap:1px;
+  height:auto;
+  padding:0px 30px;
+}
+.left-side{
+  width:50%;
+  font-size: 10px;
+  color:white;
+}
+.right-side{
+  width:50%;
+  display:flex;
+}
+input{
+  width:50%;
+}
+.email-type{
+  display:flex;
+  justify-content: space-between;
+  height:80%;
+  background-color:#fcfcfd;
+  border-radius: 5px;
+}
+button{
+  font-size: x-small;
+  padding:5px;
+}
+.footer{
+  flex-direction: column;
+}
+}
